@@ -8,11 +8,13 @@
   "dependencies": {
     "@elysiajs/cors": "^1.2.0",
     "@neondatabase/serverless": "^0.10.4",
+    "bcryptjs": "^2.4.3",
     "drizzle-orm": "^0.38.4",
     "elysia": "latest",
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "bun-types": "latest",
     "drizzle-kit": "^0.30.2"
   },

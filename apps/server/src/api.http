@@ -6,9 +6,18 @@ POST http://{{host}}/auth/register
 Content-Type: application/json
 
 {
-    "name": "Steve",
-    "username": "steve69",
-    "email": "dummy@example.com",
+    "name": "Ifty",
+    "username": "ifty64bit",
+    "email": "ifty64bit@gmail.com",
+    "password": "123456"
+}
+
+### Login
+POST http://{{host}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "ifty64bit@gmail.com",
     "password": "123456"
 }
 

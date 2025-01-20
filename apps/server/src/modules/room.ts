@@ -2,7 +2,7 @@ import { Elysia } from "elysia";
 import authGuard from "../middlewares/authGuard";
 
 export default new Elysia({
-    name: "room",
+    name: "api:room",
     prefix: "/room",
 })
     .use(authGuard)
