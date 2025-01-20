@@ -1,0 +1,18 @@
+@host = localhost:3000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN0ZXZlbiIsImVtYWlsIjoic3RldmVuQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYxNjIwNjYwMn0.1
+
+### Register
+POST http://{{host}}/auth/register
+Content-Type: application/json
+
+{
+    "name": "Steve",
+    "username": "steve69",
+    "email": "dummy@example.com",
+    "password": "123456"
+}
+
+### Get List Of Rooms
+GET http://{{host}}/room/list
+Authorization: Bearer {{token}}
+
