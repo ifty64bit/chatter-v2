@@ -1,6 +1,6 @@
 import { Elysia, t } from "elysia";
 import db from "../db";
-import { type User, usersTable } from "../db/schemas/userSchema";
+import { type User, usersTable } from "../db/schemas/usersSchema";
 import { eq } from "drizzle-orm";
 import jwt from "jsonwebtoken";
 import brbcrypt from "bcryptjs";

@@ -1,5 +1,5 @@
 @host = localhost:3000
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlN0ZXZlbiIsImVtYWlsIjoic3RldmVuQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYxNjIwNjYwMn0.1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzM3Mzk3OTkwLCJleHAiOjE3Mzc0ODQzOTB9.RYxXnAb_AwTZwn1TF1pjYqI4ifm09z6asBMvPLCPNu0
 
 ### Register
 POST http://{{host}}/auth/register
@@ -7,8 +7,8 @@ Content-Type: application/json
 
 {
     "name": "Ifty",
-    "username": "ifty64bit",
-    "email": "ifty64bit@gmail.com",
+    "username": "ifty",
+    "email": "ifty64bit+1@gmail.com",
     "password": "123456"
 }
 
@@ -19,6 +19,15 @@ Content-Type: application/json
 {
     "email": "ifty64bit@gmail.com",
     "password": "123456"
+}
+
+### Create Room
+POST http://{{host}}/room/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "participants": [3, 2]
 }
 
 ### Get List Of Rooms

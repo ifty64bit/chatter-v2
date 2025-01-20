@@ -13,7 +13,7 @@ export default new Elysia({
         const token = auth.split(" ")[1];
         try {
             return {
-                user: jwt.verify(token, "secret") as {
+                user: jwt.verify(token, process.env.JWT_SECRET as string) as {
                     id: number;
                     name: string;
                 },
